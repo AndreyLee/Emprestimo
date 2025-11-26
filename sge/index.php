@@ -39,10 +39,19 @@ $emprestimos = $pdo->query("SELECT * FROM emprestimos ORDER BY data DESC")->fetc
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <header class="bg-primary text-white text-center p-3">
-        <div class="container position-relative">
-            <h1 class="mb-0 fs-4">Sistema de Gestão de Empréstimos</h1>
-            <a href="logout.php" class="btn btn-danger position-absolute top-50 end-0 translate-middle-y">Sair</a>
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <!-- Espaço em branco para equilíbrio -->
+                </div>
+                <div class="col-md-6 text-center">
+                    <h1 class="mb-0 fs-4">Sistema de Gestão de Empréstimos</h1>
+                </div>
+                <div class="col-md-3 text-end">
+                    <a href="logout.php" class="btn btn-danger">Sair</a>
+                </div>
+            </div>
         </div>
     </header>
 
