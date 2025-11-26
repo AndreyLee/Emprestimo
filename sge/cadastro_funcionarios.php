@@ -65,7 +65,17 @@ $funcionarios = $pdo->query("SELECT id, nome, setor, perfil, data_cadastro FROM 
                     <div class="row g-3">
                         <div class="col-md-6"><input type="text" class="form-control" name="nome" placeholder="Nome" required></div>
                         <div class="col-md-6"><input type="password" class="form-control" name="senha" placeholder="Senha" required></div>
-                        <div class="col-md-6"><input type="text" class="form-control" name="setor" placeholder="Setor" required></div>
+                        <div class="col-md-6">
+                            <select name="setor" class="form-select" required>
+                                <option value="" disabled selected>Selecione o Setor</option>
+                                <option value="GERÊNCIA">GERÊNCIA</option>
+                                <option value="NTI">NTI</option>
+                                <option value="INFRAESTRUTURA">INFRAESTRUTURA</option>
+                                <option value="SERVIÇOS">SERVIÇOS</option>
+                                <option value="COMUNICAÇÃO">COMUNICAÇÃO</option>
+                                <option value="ADMINISTRATIVO">ADMINISTRATIVO</option>
+                            </select>
+                        </div>
                         <div class="col-md-6">
                             <select name="perfil" class="form-select" required>
                                 <option value="" disabled selected>Selecione o Perfil</option>
