@@ -1,0 +1,4 @@
+Fatal Error: Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/html/exportar_excel.php:22
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/exportar_excel.php on line 22
